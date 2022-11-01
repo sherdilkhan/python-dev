@@ -1,5 +1,5 @@
 
-# a Contrcutor is a fuction that is called at the time of object creation
+# a Contrcutor is a fuction that is called at the time of object creation. becuase it construct or creat an object
 
 class Point:
     #lets define a contructor which will be called at the time of object creations
