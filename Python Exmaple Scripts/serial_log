@@ -1,0 +1,36 @@
+from __future__ import print_function
+import serial, time, io, datetime
+from serial import Serial
+
+addr = "COM7" ## serial port to read data from
+baud = 9600 ## baud rate for instrument
+
+ser = serial.Serial(
+    port = addr,\
+    baudrate = baud,\
+    parity=serial.PARITY_NONE,\
+    stopbits=serial.STOPBITS_ONE,\
+    bytesize=serial.EIGHTBITS,\
+    timeout=0)
+
+
+if ser.isOpen():
+    ser.close()
+ser.open()
+ser.isOpen()
+print("Connected to: " + ser.portstr)
+
+##filename="myFile.txt"
+##datafile=open(filename, 'a')
+
+
+
+#ser.write("%01#RDD0010000107**\r")
+out = []
+# let's wait one second before reading output (let's give device time to answer)
+time.sleep(1)
+while ser.inWaiting() > 0:
+    out += ser.read()
+
+if out != '\n':
+    print(out)
