@@ -30,7 +30,7 @@ while(True):
         #num = int(string) 
         print(val1 + ' , ' + val2)
     with open("test.csv", "a") as nice:
-        nice.write(f"{i}, {val1}, {val2}")
+        nice.write(f"{i},{time.strftime('%a %H:%M:%S')},{val1},{val2}")
         i += 1
  
 ser.close()
