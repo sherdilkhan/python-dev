@@ -2,12 +2,17 @@
 
 class Dog:
     specie = 'Labrador Retriever'            #class attribute for Dog Class (same for all objects)
+
+############## __init__ and __str__ both are dunder methods just like many more in python######################
+
     def __init__(self, name, age):           #instance attributes for Dog Class (unique for all objects)
         self.name = name
         self.age = age
     
     def __str__(self):      #to print an object, this will give details of that object in a "pythonic Way" rather than "<__main__.Dog object at 0x00aeff70>"
         return f"my name is {self.name} and i am {self.age} years old"
+
+#######################################################################################
 
 
     def introduce(self):                    #instance method for Dog Class
