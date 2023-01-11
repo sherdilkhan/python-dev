@@ -1,0 +1,3 @@
+conda base 3.9.13
+
+youtube help: https://www.youtube.com/watch?v=5Cf_Xmz-3N0
