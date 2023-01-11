@@ -2,11 +2,12 @@ from tkinter import *
 
 
 root = Tk()
-
-root.geometry('600x400')
+root.title('This is First App in Tkinter')
+root.geometry('600x400+400+400')
+root.resizable(False, False)
 
 def on_click():
-    label_1 = Label(root, text=d_enter.get())
+    label_1 = Label(root, text=f"Hello: {d_enter.get()}")
     label_1.pack()
 
 
