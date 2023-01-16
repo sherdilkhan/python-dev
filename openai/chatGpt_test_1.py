@@ -4,7 +4,7 @@ import os
 
 
 #openai.api_key = os.getenv["OPENAI_API_KEY"]
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY") 
 prompt = "formatted strings in python"
 completions = openai.Completion.create(
     engine="text-davinci-002",
