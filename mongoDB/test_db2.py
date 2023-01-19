@@ -7,7 +7,7 @@ mycol = mydb["hpdc"]
 #for x in mycol.find():
     #print(x)
 
-myquery = { "Equipment #": "800000427" }
+myquery = {"Equipment #": "800000426" }
 
 mydoc = mycol.find(myquery)
 
