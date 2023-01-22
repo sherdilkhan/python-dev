@@ -8,8 +8,8 @@ app = Flask(__name__) #creates Flask Class instance
 
 mongopass = os.getenv("MONGOPASS") #get connection string from user enviroment variable
 client = MongoClient(mongopass) #create mongo client instance to connect with MongoDB online Cluster
-db = client.ahl_equipment
-collection = db.bd
+db = client.sherdil_inv
+collection = db.tools
 
 #Lets create URL Mapping for different html pages
 
@@ -32,8 +32,8 @@ def read():
 
 @app.route('/insert')
 def insert():
-    notification = request.args.get('Notification')
-    equipment = request.args.get("Equipment")
+    notification = request.args.get('notification')
+    equipment = request.args.get("equipment")
     myVal = {'notification': notification, 'equipment': equipment }
     x = collection.insert_one(myVal)
     return render_template('response.html', res = x)
