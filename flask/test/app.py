@@ -26,9 +26,17 @@ def curd_page():
 def read():
     cursor = collection.find()
     for record in cursor:
-        name = record['Notification']
-        print(name)
-        return render_template('response.html', res = name)
+        notification = record['Notification']
+        print(notification)
+        return render_template('response.html', res = notification)
+
+@app.route('/insert')
+def insert():
+    notification = request.args.get('Notification')
+    equipment = request.args.get("Equipment")
+    myVal = {'notification': notification, 'equipment': equipment }
+    x = collection.insert_one(myVal)
+    return render_template('response.html', res = x)
 
 
 #run flask app
