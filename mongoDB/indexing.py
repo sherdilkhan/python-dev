@@ -22,7 +22,7 @@ while True:
         x = collection_1.insert_one(myVal)
     except:
         pass
-    time.sleep(2)
+    time.sleep(.1)
     
 
     
