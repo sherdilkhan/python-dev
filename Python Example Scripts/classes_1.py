@@ -18,6 +18,7 @@ b = Engineer('Sherdil', 'ELectrical Engineer')
 a.info()
 b.info()
 
+print(a.get_name())
 
 
 
