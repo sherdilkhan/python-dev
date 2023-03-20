@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5dada;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  color: #666;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005f80;
+}
+
+nav {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #777;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li i {
+  margin-right: 10px;
+  color: #777;
+}
+
+footer ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  background-color: #eee;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #777;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.footer-bottom ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-bottom ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+  color: #333;
+}

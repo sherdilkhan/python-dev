@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+    <title>Welcome to My Website</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5000/">Home</a></li>
+        <li><a href="http://127.0.0.1:5000/aboutUs">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+      </ul>
+      </nav>
+	  
+    <h1>Welcome to My Website</h1>
+    <p>Thank you for visiting my website! Please select one of the following options:</p>
+    <button onclick="location.href='data_enter'">Data Entry Form</button>
+    <button onclick="location.href='data_display'">Display Entire Data Table from DB</button>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-map-marker"></i>1234 Main Street, Anytown, USA</li>
+              <li><i class="fa fa-phone"></i>(123) 456-7890</li>
+              <li><i class="fa fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Connect With Us</h4>
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

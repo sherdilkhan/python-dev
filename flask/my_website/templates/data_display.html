@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MySQL Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_data_display.css') }}">
+  </head>
+  <body>
+    <nav>
+		<ul>
+		  <li><a href="http://127.0.0.1:5000/">Home</a></li>
+		  <li><a href="#">About Us</a></li>
+		  <li><a href="#">Services</a></li>
+		  <li><a href="http://127.0.0.1:5000/contact">Contact Us</a></li>
+		</ul>
+	  </nav>
+
+    <h1>MySQL Data</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+          <th>Column 5</th>          
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+          <td>{{ row[4] }}</td>          
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
